@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://abdullah49206848-sudo.github.io/fench-calculator/
+Sitemap: https://abdullah49206848-sudo.github.io/fench-calculator/sitemap.xml
