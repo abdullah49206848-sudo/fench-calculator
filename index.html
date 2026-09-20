@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fence Calculator - Calculate Fence Materials & Cost</title>
+
+    <meta
+        name="description"
+        content="Use our free fence calculator to estimate fence posts, rails, pickets, concrete, materials, and total fence cost."
+    >
+
+    <meta
+        name="keywords"
+        content="fence calculator, fence cost calculator, fence material calculator, fence post calculator"
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+
+    <meta property="og:title" content="Fence Calculator - Calculate Fence Materials & Cost">
+    <meta
+        property="og:description"
+        content="Calculate fence posts, rails, pickets, concrete and estimated fence cost with our free fence calculator."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="/" class="logo">
+            Fence Calculator
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#calculator">Calculator</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#guide">Guide</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <span class="eyebrow">
+                    FREE FENCE CALCULATOR
+                </span>
+
+                <h1>
+                    Fence Calculator
+                </h1>
+
+                <p>
+                    Calculate the number of fence posts, rails, pickets,
+                    concrete, and estimated materials you need for your
+                    fencing project.
+                </p>
+
+                <a href="#calculator" class="primary-button">
+                    Calculate Your Fence
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CALCULATOR -->
+
+    <section id="calculator" class="calculator-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    FENCE CALCULATOR
+                </span>
+
+                <h2>
+                    Calculate Your Fence Materials
+                </h2>
+
+                <p>
+                    Enter your fence measurements below to get an
+                    estimated material quantity.
+                </p>
+
+            </div>
+
+
+            <div class="calculator-layout">
+
+                <!-- INPUT CARD -->
+
+                <div class="calculator-card">
+
+                    <form id="fenceForm">
+
+                        <div class="form-group">
+
+                            <label for="fenceLength">
+                                Fence Length
+                            </label>
+
+                            <div class="input-row">
+
+                                <input
+                                    type="number"
+                                    id="fenceLength"
+                                    min="1"
+                                    step="0.01"
+                                    value="100"
+                                    required
+                                >
+
+                                <select id="lengthUnit">
+                                    <option value="ft">Feet</option>
+                                    <option value="m">Meters</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="fenceHeight">
+                                Fence Height
+                            </label>
+
+                            <div class="input-row">
+
+                                <input
+                                    type="number"
+                                    id="fenceHeight"
+                                    min="1"
+                                    step="0.01"
+                                    value="6"
+                                    required
+                                >
+
+                                <span class="unit-label">
+                                    ft
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="fenceType">
+                                Fence Type
+                            </label>
+
+                            <select id="fenceType">
+
+                                <option value="privacy">
+                                    Privacy Fence
+                                </option>
+
+                                <option value="picket">
+                                    Picket Fence
+                                </option>
+
+                                <option value="panel">
+                                    Panel Fence
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="postSpacing">
+                                Post Spacing
+                            </label>
+
+                            <div class="input-row">
+
+                                <input
+                                    type="number"
+                                    id="postSpacing"
+                                    min="1"
+                                    step="0.1"
+                                    value="8"
+                                    required
+                                >
+
+                                <span class="unit-label">
+                                    ft
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="gates">
+                                Number of Gates
+                            </label>
+
+                            <input
+                                type="number"
+                                id="gates"
+                                min="0"
+                                step="1"
+                                value="1"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="gateWidth">
+                                Gate Width
+                            </label>
+
+                            <div class="input-row">
+
+                                <input
+                                    type="number"
+                                    id="gateWidth"
+                                    min="0"
+                                    step="0.1"
+                                    value="4"
+                                >
+
+                                <span class="unit-label">
+                                    ft
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="picketWidth">
+                                Picket Width
+                            </label>
+
+                            <div class="input-row">
+
+                                <input
+                                    type="number"
+                                    id="picketWidth"
+                                    min="0.1"
+                                    step="0.01"
+                                    value="5.5"
+                                >
+
+                                <span class="unit-label">
+                                    inches
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="picketGap">
+                                Picket Gap
+                            </label>
+
+                            <div class="input-row">
+
+                                <input
+                                    type="number"
+                                    id="picketGap"
+                                    min="0"
+                                    step="0.01"
+                                    value="0.5"
+                                >
+
+                                <span class="unit-label">
+                                    inches
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="rails">
+                                Rails Per Section
+                            </label>
+
+                            <input
+                                type="number"
+                                id="rails"
+                                min="1"
+                                step="1"
+                                value="2"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="waste">
+                                Waste Allowance
+                            </label>
+
+                            <div class="input-row">
+
+                                <input
+                                    type="number"
+                                    id="waste"
+                                    min="0"
+                                    max="100"
+                                    step="1"
+                                    value="10"
+                                >
+
+                                <span class="unit-label">
+                                    %
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="calculate-button"
+                        >
+                            Calculate Fence
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- RESULT CARD -->
+
+                <div class="result-card">
+
+                    <div class="result-header">
+
+                        <span class="section-label">
+                            YOUR ESTIMATE
+                        </span>
+
+                        <h2>
+                            Fence Materials
+                        </h2>
+
+                    </div>
+
+
+                    <div
+                        id="calculatorMessage"
+                        class="calculator-message"
+                        aria-live="polite"
+                    ></div>
+
+
+                    <div class="results-grid">
+
+                        <div class="result-item">
+
+                            <span>
+                                Fence Sections
+                            </span>
+
+                            <strong id="resultSections">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-item">
+
+                            <span>
+                                Fence Posts
+                            </span>
+
+                            <strong id="resultPosts">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-item">
+
+                            <span>
+                                Rails
+                            </span>
+
+                            <strong id="resultRails">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-item">
+
+                            <span>
+                                Pickets
+                            </span>
+
+                            <strong id="resultPickets">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-item">
+
+                            <span>
+                                Concrete
+                            </span>
+
+                            <strong id="resultConcrete">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-item">
+
+                            <span>
+                                Waste Included
+                            </span>
+
+                            <strong id="resultWaste">
+                                0%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-note">
+
+                        <strong>Important:</strong>
+
+                        <p>
+                            This calculator provides an estimate based
+                            on the measurements you enter. Actual
+                            material requirements can vary depending on
+                            your fence design, terrain, local building
+                            requirements, and installation method.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section id="how-it-works" class="content-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    HOW IT WORKS
+                </span>
+
+                <h2>
+                    How to Use the Fence Calculator
+                </h2>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+                <article class="step-card">
+
+                    <span class="step-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Enter Fence Length
+                    </h3>
+
+                    <p>
+                        Enter the total length of the fence you want
+                        to install.
+                    </p>
+
+                </article>
+
+
+                <article class="step-card">
+
+                    <span class="step-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Select Fence Details
+                    </h3>
+
+                    <p>
+                        Enter the fence height, post spacing, gates,
+                        picket dimensions, rails, and waste allowance.
+                    </p>
+
+                </article>
+
+
+                <article class="step-card">
+
+                    <span class="step-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Get Your Estimate
+                    </h3>
+
+                    <p>
+                        The calculator estimates your fence sections,
+                        posts, rails, pickets, and concrete.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GUIDE -->
+
+    <section id="guide" class="content-section light-section">
+
+        <div class="container narrow-content">
+
+            <span class="section-label">
+                FENCE CALCULATOR GUIDE
+            </span>
+
+            <h2>
+                How Does a Fence Calculator Work?
+            </h2>
+
+            <p>
+                A fence calculator estimates the materials required
+                for a fencing project by using the total fence length,
+                post spacing, fence style, and other measurements.
+            </p>
+
+            <h3>
+                Calculating Fence Posts
+            </h3>
+
+            <p>
+                The approximate number of fence sections can be
+                calculated by dividing the fence length by the
+                selected post spacing. Posts are then required at
+                the beginning and end of each section.
+            </p>
+
+            <h3>
+                Calculating Fence Rails
+            </h3>
+
+            <p>
+                Rails are estimated by multiplying the number of
+                fence sections by the number of rails used in each
+                section.
+            </p>
+
+            <h3>
+                Calculating Pickets
+            </h3>
+
+            <p>
+                For picket fences, the required number of pickets
+                depends on the picket width and the gap between
+                adjacent pickets.
+            </p>
+
+            <h3>
+                Adding Waste
+            </h3>
+
+            <p>
+                A waste allowance can account for cuts, damaged
+                materials, measurement differences, and other
+                installation losses.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FENCE TYPES -->
+
+    <section class="content-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    FENCE TYPES
+                </span>
+
+                <h2>
+                    Common Fence Types
+                </h2>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <article class="info-card">
+
+                    <h3>
+                        Privacy Fence
+                    </h3>
+
+                    <p>
+                        Privacy fences are commonly designed with
+                        closely spaced boards or pickets to provide
+                        greater visual privacy.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <h3>
+                        Picket Fence
+                    </h3>
+
+                    <p>
+                        Picket fences normally use individual pickets
+                        installed with a defined space between them.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <h3>
+                        Panel Fence
+                    </h3>
+
+                    <p>
+                        Panel fences use prefabricated sections that
+                        are installed between supporting posts.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section id="faq" class="content-section light-section">
+
+        <div class="container narrow-content">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    FAQ
+                </span>
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+            </div>
+
+
+            <details>
+                <summary>
+                    How accurate is a fence calculator?
+                </summary>
+
+                <p>
+                    A fence calculator provides an estimate based on
+                    the measurements entered. Actual quantities can
+                    change because of fence layout, terrain, gates,
+                    corners, local requirements, and installation
+                    methods.
+                </p>
+
+            </details>
+
+
+            <details>
+                <summary>
+                    How far apart should fence posts be?
+                </summary>
+
+                <p>
+                    Post spacing depends on the fence design, materials,
+                    height, wind exposure, and installation method.
+                    Many fence designs use spacing around 6 to 8 feet,
+                    but the appropriate spacing should be confirmed for
+                    your specific fence system and local requirements.
+                </p>
+
+            </details>
+
+
+            <details>
+                <summary>
+                    Does the calculator include waste?
+                </summary>
+
+                <p>
+                    Yes. You can enter a waste percentage and the
+                    calculator will include that allowance in the
+                    estimated material quantities.
+                </p>
+
+            </details>
+
+
+            <details>
+                <summary>
+                    Can I use the calculator for different fence types?
+                </summary>
+
+                <p>
+                    Yes. The calculator supports privacy, picket, and
+                    panel fence calculations. Different fence designs
+                    can require different materials and installation
+                    methods.
+                </p>
+
+            </details>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="content-section">
+
+        <div class="container narrow-content">
+
+            <span class="section-label">
+                ABOUT
+            </span>
+
+            <h2>
+                About Fence Calculator
+            </h2>
+
+            <p>
+                Fence Calculator is a simple online tool designed to
+                help homeowners, DIY users, and contractors estimate
+                common fencing materials before starting a project.
+            </p>
+
+            <p>
+                Our goal is to make fence planning easier by providing
+                clear calculations and practical explanations in one
+                place.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact-section">
+
+        <div class="container narrow-content">
+
+            <h2>
+                Contact
+            </h2>
+
+            <p>
+                If you find an issue with the calculator or have a
+                suggestion, please contact us.
+            </p>
+
+            <a
+                href="mailto:hello@YOUR-DOMAIN.com"
+                class="text-link"
+            >
+                hello@YOUR-DOMAIN.com
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-inner">
+
+        <div>
+
+            <strong>
+                Fence Calculator
+            </strong>
+
+            <p>
+                Free tools for estimating fence materials.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#calculator">
+                Calculator
+            </a>
+
+            <a href="#how-it-works">
+                How It Works
+            </a>
+
+            <a href="#faq">
+                FAQ
+            </a>
+
+            <a href="#guide">
+                Guide
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container copyright">
+
+        <p>
+            © <span id="currentYear"></span> Fence Calculator.
+            All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
